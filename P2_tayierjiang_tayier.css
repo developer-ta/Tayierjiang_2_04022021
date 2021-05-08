@@ -1087,10 +1087,13 @@
         top: -20px;
     }
     /* ---------------section-2------------------------------------------------ */
-    div.Hébergement-populaire {
+    .Héberge_marsrille {
+        display: ;
         display: flex;
-        justify-content: space-between;
-        padding: 0px 20px 0px 20px;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        /* gap: 30px; */
+        column-gap: 30px;
     }
     .fa-chart-line {
         font-size: x-large;
@@ -1105,7 +1108,7 @@
     }
     /* -------------------section-3--------------------------------- */
     p.Marseille {
-        margin: 15px 20px;
+        margin: 26px 20px;
     }
     h2.Marseille {
         margin-left: 25px;
@@ -1113,20 +1116,22 @@
         color: black;
         font-weight: bold;
         grid-column: 1/4;
+        margin: 4px;
     }
     div.Marseille {
         background-color: #f2f2f2;
         border-radius: 20px;
         padding: 15px;
-        display: inline-block;
-        width: 60%;
+        /* display: inline-block; */
+        width: 889px;
         /* margin: 15px; */
         display: inline-grid;
         grid-template-columns: auto auto auto;
-        position: relative;
-        right: 28%;
-        grid-gap: 10px;
+        /* position: relative; */
+        /* right: 28%; */
+        grid-gap: 5px;
     }
+    .Hébergements-Marseille {}
     .Marseille div {
         background-color: white;
         border-radius: 20px;
@@ -1135,12 +1140,13 @@
         margin-top: 3px;
     }
     .Marseille img {
-        width: 95%;
-        height: 125px;
+        width: 234px;
+        height: 115px;
         border-radius: 17px 17px 0 0;
         padding: 5px 5px 5px 5px;
-        position: relative;
-        left: 1px;
+        /* position: relative; */
+        justify-self: center;
+        /* left: 1px; */
     }
     .prix h4,
     p {
@@ -1155,12 +1161,12 @@
         width: 380px;
         display: inline-grid;
         grid-template-rows: 10% 29% 29% 29%;
-        position: relative;
-        left: 68%;
+        /* position: relative; */
+        /* left: 68%; */
     }
     .Hébergement_populaire div.prix {
         /* padding: 22px; */
-        background-color: white;
+        /* background-color: white; */
         padding: 15px 20px 0px 0px;
     }
     .plus_populaires img {
@@ -1177,10 +1183,10 @@
     }
     div.Hébergement_populaire {
         display: inline-grid;
-        grid-template-columns: 42% 57%;
+        grid-template-columns: 130px 195px;
         margin: 20px;
         border-radius: 20px;
-        overflow: hidden;
+        /* overflow: hidden; */
         background-color: white;
     }
     i {
@@ -1197,7 +1203,7 @@
         border-radius: 20px;
         display: grid;
         grid-template-areas: "a b d e" "a c d j ";
-        grid-template-columns: 27% 23% 27% 23%;
+        grid-template-columns: 360px 313px 360px 313px;
     }
     .Activité div {
         border-radius: 20px;
@@ -1268,3 +1274,6 @@
         border-radius: 17px 17px 0 0;
     }
 }
+
+
+/*---------------- Responsive général ------------------------*/
