@@ -1088,12 +1088,12 @@
     }
     /* ---------------section-2------------------------------------------------ */
     .Héberge_marsrille {
-        display: ;
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-end;
-        /* gap: 30px; */
-        column-gap: 30px;
+        width: 1340px;
+        /* gap: 30px;
+        column-gap: 30px; */
     }
     .fa-chart-line {
         font-size: x-large;
@@ -1106,41 +1106,49 @@
     .prix p {
         margin: -2px 0px 7px 0px;
     }
+    .prix i {
+        color: #0065fc;
+    }
     /* -------------------section-3--------------------------------- */
     p.Marseille {
-        margin: 26px 20px;
+        margin: 25px 0px 10px 0px;
+        font-weight: 500;
+        font-size: larger;
     }
     h2.Marseille {
-        margin-left: 25px;
+        margin-left: 5px;
+        margin-bottom: 10px;
         font-size: x-large;
         color: black;
         font-weight: bold;
         grid-column: 1/4;
-        margin: 4px;
     }
     div.Marseille {
         background-color: #f2f2f2;
         border-radius: 20px;
-        padding: 15px;
+        padding: 0px 30Px;
         /* display: inline-block; */
-        width: 889px;
+        width: 882px;
         /* margin: 15px; */
         display: inline-grid;
         grid-template-columns: auto auto auto;
         /* position: relative; */
         /* right: 28%; */
-        grid-gap: 5px;
+        /* grid-gap: 5px; */
+        margin-right: 40px;
     }
-    .Hébergements-Marseille {}
+    .Hébergements-Marseille {
+        margin: 15px 15px;
+    }
     .Marseille div {
         background-color: white;
         border-radius: 20px;
         display: inline-grid;
-        margin: 15px 10px 5px 7px;
-        margin-top: 3px;
+        /* margin: 15px 10px 5px 7px; */
+        /* margin-top: 3px; */
     }
     .Marseille img {
-        width: 234px;
+        width: 240px;
         height: 115px;
         border-radius: 17px 17px 0 0;
         padding: 5px 5px 5px 5px;
@@ -1152,12 +1160,15 @@
     p {
         margin: -2px 0px 7px 0px;
     }
-    div.prix {}
+    .Hébergements-Marseille .prix {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
     div.plus_populaires {
         background-color: #f2f2f2;
         border-radius: 20px;
         padding: 17px 20px 0px 20px;
-        margin: 0px 7px;
+        /* margin: 0px 7px; */
         width: 380px;
         display: inline-grid;
         grid-template-rows: 10% 29% 29% 29%;
@@ -1183,7 +1194,7 @@
     }
     div.Hébergement_populaire {
         display: inline-grid;
-        grid-template-columns: 130px 195px;
+        grid-template-columns: 154px 190px;
         margin: 20px;
         border-radius: 20px;
         /* overflow: hidden; */
@@ -1196,7 +1207,7 @@
     .Hébergement_populaire i {
         margin-top: 20px;
         font-size: small;
-        color: blue;
+        color: #0065fc;
     }
     /* ----------------  Sections-4 ------------------------------------ */
     div.Activité {
