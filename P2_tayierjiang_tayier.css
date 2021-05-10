@@ -962,9 +962,13 @@
     /* ------------------------section-1---------------------------------------------- */
     div.head {
         padding: 20px;
+        display: flex;
     }
     div.logo {
         display: inline-block;
+    }
+    .vacances p {
+        font-weight: lighter;
     }
     hr.head {
         border: 0.1px solid;
@@ -978,13 +982,17 @@
         text-decoration: none;
         margin-inline-start: 30px;
     }
+    a.Hébergements {
+        color: #0065fc;
+    }
     nav {
-        margin-inline-start: 28px;
-        position: relative;
-        left: 60%;
         bottom: 33px;
         font-size: larger;
         display: flex;
+        grid-column-gap: 38px;
+        justify-: flex-start;
+        align-self: center;
+        margin-inline-start: auto;
     }
     .Activités {
         font-weight: 300;
@@ -1043,7 +1051,7 @@
     .filtres button {
         background-color: white;
         border-radius: 40px 40px;
-        margin: 5px 5px 18px 4px;
+        margin: 5px 20px 18px 4px;
         padding: 14px 13px 15px 11px;
         box-sizing: border-box;
         overflow: hidden;
@@ -1111,12 +1119,12 @@
     }
     /* -------------------section-3--------------------------------- */
     p.Marseille {
-        margin: 25px 0px 10px 0px;
+        margin: 25px 0px 10px 10px;
         font-weight: 500;
         font-size: larger;
     }
     h2.Marseille {
-        margin-left: 5px;
+        margin-left: 10px;
         margin-bottom: 10px;
         font-size: x-large;
         color: black;
