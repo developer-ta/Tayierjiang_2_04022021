@@ -959,6 +959,9 @@
         image-rendering: pixelated;
         margin: 0 40px;
     }
+    .ensemble-du-site {
+        margin: auto;
+    }
     /* ------------------------section-1---------------------------------------------- */
     div.head {
         padding: 20px;
