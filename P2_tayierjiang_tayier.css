@@ -965,7 +965,6 @@
     }
     /* ------------------------section-1---------------------------------------------- */
     div.head {
-        padding: 30px 0px;
         display: flex;
     }
     div.logo {
@@ -974,13 +973,18 @@
     .vacances p {
         font-weight: lighter;
     }
+    .vacances {
+        margin-top: 3em;
+    }
     hr.head {
         border: 0.1px solid;
         display: block;
-        width: 150px;
+        width: 11em;
         box-sizing: border-box;
-        position: relative;
-        left: 23%;
+        position: fixed;
+        left: 57em;
+        margin-bottom: 3em;
+        margin-top: -8px;
     }
     .menu a {
         text-decoration: none;
@@ -995,7 +999,7 @@
         display: flex;
         grid-column-gap: 38px;
         align-self: center;
-        margin-left: auto;
+        margin-left: 39em;
     }
     .Activités {
         font-weight: 300;
@@ -1049,13 +1053,13 @@
     }
     .filtres label {
         font-size: x-large;
-        margin: 12px 15px;
+        margin: 12px 15px 0px 0px;
     }
     .filtres button {
         background-color: white;
         border-radius: 40px 40px;
-        margin: 5px 35px 18px 4px;
-        padding: 15px 21px 16px 11px;
+        margin: 5px 20px 20px 0px;
+        padding: 14px 13px 15px 11px;
         box-sizing: border-box;
         overflow: hidden;
         box-shadow: 0px 0px 1px 1.4px gainsboro;
@@ -1076,11 +1080,8 @@
         color: #0065fc;
         font-size: larger;
     }
-    /* i {
-        color: #0065fc;
-    } */
     form.filtres {
-        margin: 30px 11px 0px 0px;
+        margin: 30px 0px 0px 0px;
     }
     div.info {
         display: flex;
@@ -1103,8 +1104,6 @@
         flex-direction: row-reverse;
         justify-content: flex-end;
         width: 1340px;
-        /* gap: 30px;
-        column-gap: 30px; */
     }
     .fa-chart-line {
         font-size: x-large;
@@ -1114,21 +1113,19 @@
     .chambre-hôte h4 {
         padding: 1px;
     }
-    .prix p {
-        margin: -2px 0px 7px 0px;
-    }
     .prix i {
         color: #0065fc;
     }
     /* -------------------section-3--------------------------------- */
     p.Marseille {
-        margin: 25px 0px 10px 10px;
+        margin: 25px 0px 30px 10px;
         font-weight: 500;
-        font-size: larger;
+        font-size: 22px;
     }
     h2.Marseille {
         margin-left: 10px;
-        margin-bottom: 10px;
+        margin-top: 47px;
+        margin-bottom: -31px;
         font-size: x-large;
         color: black;
         font-weight: bold;
@@ -1138,14 +1135,9 @@
         background-color: #f2f2f2;
         border-radius: 20px;
         padding: 0px 30Px;
-        /* display: inline-block; */
         width: 882px;
-        /* margin: 15px; */
         display: inline-grid;
         grid-template-columns: auto auto auto;
-        /* position: relative; */
-        /* right: 28%; */
-        /* grid-gap: 5px; */
         margin-right: 40px;
     }
     .Hébergements-Marseille {
@@ -1154,18 +1146,13 @@
     .Marseille div {
         background-color: white;
         border-radius: 20px;
-        display: inline-grid;
-        /* margin: 15px 10px 5px 7px; */
-        /* margin-top: 3px; */
     }
     .Marseille img {
-        width: 240px;
-        height: 115px;
+        width: 245px;
+        height: 113px;
         border-radius: 17px 17px 0 0;
         padding: 5px 5px 5px 5px;
-        /* position: relative; */
         justify-self: center;
-        /* left: 1px; */
     }
     .info p {
         font-weight: lighter;
@@ -1176,22 +1163,17 @@
     }
     .Hébergements-Marseille .prix {
         margin-left: 20px;
-        margin-top: 10px;
+        height: 40px;
     }
     div.plus_populaires {
         background-color: #f2f2f2;
         border-radius: 20px;
         padding: 17px 20px 0px 20px;
-        /* margin: 0px 7px; */
         width: 380px;
         display: inline-grid;
         grid-template-rows: 10% 29% 29% 29%;
-        /* position: relative; */
-        /* left: 68%; */
     }
     .Hébergement_populaire div.prix {
-        /* padding: 22px; */
-        /* background-color: white; */
         padding: 15px 20px 0px 0px;
     }
     .plus_populaires img {
@@ -1211,7 +1193,6 @@
         grid-template-columns: 154px 190px;
         margin: 20px;
         border-radius: 20px;
-        /* overflow: hidden; */
         background-color: white;
     }
     i {
@@ -1227,15 +1208,20 @@
     div.Activité {
         border-radius: 20px;
         display: grid;
-        grid-template-areas: "a b d e" "a c d j ";
-        grid-template-columns: 330px 330px 330px 330px;
+        grid-template-areas: "a b d e" "a b d e ";
+        grid-template-columns: 23% 23% 23% 23%;
+        grid-gap: 40Px;
+        width: 1375px;
+        height: 450px;
+    }
+    .active_addresse {
+        height: 50px;
+    }
+    .Activité-à-Marseille {
+        margin: 60px 0px;
     }
     .Activité div {
         border-radius: 20px;
-        /* margin: 15px; */
-        /* overflow: hidden; */
-        /* font-weight: 500;
-        font-size: larger; */
     }
     .active_addresse p {
         font-size: smaller;
@@ -1244,57 +1230,55 @@
         grid-area: a;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
     }
-    .Activité1 img {
-        height: 395px;
+    .Activité1 img,
+    .Activité4 img {
+        height: 400px;
         width: 100%;
     }
     .Activité2 img {
-        height: 185px;
+        height: 190px;
         width: 100%;
     }
     .Activité3 img {
-        height: 161px;
-        width: 100%;
-    }
-    .Activité4 img {
-        height: 395px;
+        height: 120px;
         width: 100%;
     }
     .Activité5 img {
-        height: 155px;
+        height: 140px;
         width: 100%;
     }
     .Activité6 img {
-        height: 155px;
+        height: 165px;
         width: 100%;
     }
-    .Activité2 {
-        grid-area: a;
-        box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
-        overflow: hidden;
+    .contaier-Activité_1 {
+        grid-area: b;
     }
     .Activité2 {
-        grid-area: b;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
+        height: 240px;
+        margin-bottom: 40px;
     }
     .Activité3 {
-        grid-area: c;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
+        height: 170px;
     }
     .Activité4 {
         grid-area: d;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
-    .Activité5 {
+    .contaier-Activité_2 {
         grid-area: e;
+    }
+    .Activité5 {
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
+        margin-bottom: 40px;
     }
     .Activité6 {
-        grid-area: j;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
