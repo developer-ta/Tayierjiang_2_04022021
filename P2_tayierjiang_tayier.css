@@ -973,6 +973,7 @@
     /* ------------------------section-1---------------------------------------------- */
     div.head {
         display: flex;
+        padding-bottom: 30px;
     }
     div.logo {
         display: inline-block;
@@ -990,7 +991,7 @@
         box-sizing: border-box;
         position: absolute;
         left: 57em;
-        margin-bottom: 3em;
+        top: -7px;
     }
     .menu a {
         text-decoration: none;
