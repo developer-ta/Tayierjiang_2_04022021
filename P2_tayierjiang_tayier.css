@@ -1,3 +1,5 @@
+/* IPhone 6/7/8 et plus */
+
 @media (max-width: 375px),
 (min-width: 375px) and (max-width: 425px) {
     body {
@@ -11,7 +13,7 @@
         display: inline-block;
         margin-left: 15px;
     }
-    span.head {
+    .ligne1 {
         display: none;
     }
     .menu a {
@@ -33,18 +35,27 @@
     }
     .inscrire {
         position: absolute;
-        top: 15px;
+        top: 40px;
         left: 64%;
         color: #0065fc;
         font-size: larger;
         font-weight: 600;
     }
-    .Fils-de-séparation hr {
+    .container {
+        margin-top: 29px;
+    }
+    .ligne2 hr,
+    .ligne3 hr {
         border: 2px solid;
+        /* width: 50%;display: inline-block; */
+        /* box-sizing: border-box; */
+        /* margin: -8px -4px -8px 0px; */
+    }
+    .ligne2,
+    .ligne3 {
         display: inline-block;
         width: 50%;
-        box-sizing: border-box;
-        margin: -8px -4px -8px 0px;
+        margin-right: -3px;
     }
     .vacances {
         padding: 10px 20px;
@@ -287,7 +298,8 @@
 }
 
 
-/* @media (min-width: 425px) and (max-width: 767px) */
+/* Mobile L
+@media (min-width: 425px) and (max-width: 767px) */
 
 @media (min-width: 425px) and (max-width: 767px) {
     body {
@@ -301,7 +313,7 @@
         display: inline-block;
         margin-left: 15px;
     }
-    span.head {
+    .ligne1 {
         display: none;
     }
     .menu a {
@@ -323,18 +335,27 @@
     }
     .inscrire {
         position: absolute;
-        top: 15px;
+        top: 40px;
         left: 64%;
         color: #0065fc;
         font-size: larger;
         font-weight: 600;
     }
-    .Fils-de-séparation hr {
+    .container {
+        margin-top: 29px;
+    }
+    .ligne2 hr,
+    .ligne3 hr {
         border: 2px solid;
+        /* width: 50%;display: inline-block; */
+        /* box-sizing: border-box; */
+        /* margin: -8px -4px -8px 0px; */
+    }
+    .ligne2,
+    .ligne3 {
         display: inline-block;
         width: 50%;
-        box-sizing: border-box;
-        margin: -8px -4px -8px 0px;
+        margin-right: -3px;
     }
     .vacances {
         padding: 10px 20px;
@@ -605,14 +626,12 @@
 }
 
 
-/* §§§§§§§§§§§§§§§§§§§§§§§§§§§§@media (min-width: 768px) and (max-width: 1023px)§§§§§§§§§§§§§§§§§§§§§§§§§§§§----- */
+/* Tablette/@media (min-width: 768px) and (max-width: 1023px)§§§§§§§§§§§§§§§§§§§§§§§§§§§§----- */
 
 @media (min-width: 768px) and (max-width: 1023px) {
     body {
-        width: 100%;
         font-family: Raleway, sans-serif;
         image-rendering: pixelated;
-        margin: auto;
     }
     /* ------------------------section-1---------------------------------------------- */
     div.head {
@@ -624,10 +643,12 @@
     hr.head {
         border: 0.1px solid;
         display: block;
-        width: 150px;
+        width: 11em;
         box-sizing: border-box;
-        position: relative;
-        left: 23%;
+        position: absolute;
+        left: 29em;
+        margin-bottom: 3em;
+        margin-top: -18px;
     }
     .menu a {
         text-decoration: none;
@@ -651,7 +672,8 @@
     .inscrire {
         color: #0065fc;
     }
-    .Fils-de-séparation hr {
+    .ligne2,
+    .ligne3 {
         display: none;
     }
     .prix h4,
@@ -662,7 +684,7 @@
         box-shadow: 0px 0px 4px 0.2px gainsboro;
         width: 440px;
         border-radius: 20px;
-        margin: 20px 20px;
+        margin: 20px 20px 20px 0px;
         overflow: hidden;
         display: flex;
         justify-content: space-between;
@@ -697,7 +719,7 @@
     }
     .filtres label {
         font-size: x-large;
-        margin: 12px 15px;
+        margin: 12px 0px;
     }
     .filtres button {
         background-color: white;
@@ -728,7 +750,7 @@
         color: #0065fc;
     } */
     form.filtres {
-        margin: 30px 11px 0px 10px;
+        margin: 30px 11px 0px 0px;
     }
     div.info {
         display: flex;
@@ -739,7 +761,7 @@
         color: #0065fc;
         border-radius: 50%;
         padding: 5px 11px;
-        margin: 13px;
+        margin: 13px 13px 13px 0px;
         box-sizing: border-box;
         box-shadow: 0px 0px 1px 2.1px gainsboro;
         position: relative;
@@ -931,23 +953,29 @@
         padding: 30px;
         font-size: larger;
     }
+    .footer1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
     .footer div {
         margin-bottom: 45px;
     }
 }
 
 
-/* §§§§§§§§§§§§@media (min-width: 1024px) and (max-width: 1440px)§§§§§§§§§§ */
+/* Laptop/ Laptop L et plus  
+@media (min-width: 1024px) and (max-width: 1440px)§§§§§§§§§§ */
 
 @media (min-width: 1024px) {
     body {
-        /* width: 100%; */
+        min-width: 1440px;
         font-family: Raleway, sans-serif;
         image-rendering: pixelated;
-    }
-    .ensemble-du-site {
+        box-sizing: none;
         margin: auto;
-        padding: 0px 45PX;
+    }
+    .container {
+        margin: 0px 40px;
     }
     /* ------------------------section-1---------------------------------------------- */
     div.head {
@@ -967,10 +995,9 @@
         display: block;
         width: 11em;
         box-sizing: border-box;
-        position: fixed;
+        position: absolute;
         left: 57em;
         margin-bottom: 3em;
-        margin-top: -8px;
     }
     .menu a {
         text-decoration: none;
@@ -1271,6 +1298,16 @@
     }
     .Activité img {
         border-radius: 17px 17px 0 0;
+    }
+    .footer {
+        background-color: #f2f2f2;
+        margin: 49px 0px 0px 0px;
+        padding: 30px;
+        font-size: larger;
+    }
+    .footer1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
 }
 
