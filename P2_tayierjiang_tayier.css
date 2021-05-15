@@ -514,8 +514,6 @@
     div.Activité {
         border-radius: 20px;
         display: grid;
-        grid-template-areas: "f f" "a b " "a c" "d e" "d j";
-        grid-template-columns: 50% 50%;
     }
     .Activité div {
         border-radius: 20px;
@@ -555,42 +553,37 @@
         width: 100%;
     }
     .Activité1 {
-        grid-area: a;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
     .Activité2 {
-        grid-area: a;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
     .Activité2 {
-        grid-area: b;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
     .Activité3 {
-        grid-area: c;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
     .Activité4 {
-        grid-area: d;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
     .Activité5 {
-        grid-area: e;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
     .Activité6 {
-        grid-area: j;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
     .Activité img {
         border-radius: 17px 17px 0 0;
+        height: 455px;
+        width: 100%;
     }
     .Activité h2 {
         margin-left: 25px;
@@ -894,37 +887,30 @@
         width: 100%;
     }
     .Activité1 {
-        grid-area: a;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
     .Activité2 {
-        grid-area: a;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
     .Activité2 {
-        grid-area: b;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
     .Activité3 {
-        grid-area: c;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
     .Activité4 {
-        grid-area: d;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
     .Activité5 {
-        grid-area: e;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
     .Activité6 {
-        grid-area: j;
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
     }
@@ -1053,13 +1039,13 @@
     }
     .filtres label {
         font-size: x-large;
-        margin: 12px 15px 0px 0px;
+        margin: 12px 14px 0px 0px;
     }
     .filtres button {
         background-color: white;
         border-radius: 40px 40px;
         margin: 5px 20px 20px 0px;
-        padding: 14px 13px 15px 11px;
+        padding: 14px 13px 15px 10px;
         box-sizing: border-box;
         overflow: hidden;
         box-shadow: 0px 0px 1px 1.4px gainsboro;
@@ -1209,7 +1195,7 @@
         border-radius: 20px;
         display: grid;
         grid-template-areas: "a b d e" "a b d e ";
-        grid-template-columns: 23% 23% 23% 23%;
+        grid-template-columns: 23% 23% 23% 22%;
         grid-gap: 40Px;
         width: 1375px;
         height: 450px;
@@ -1225,6 +1211,7 @@
     }
     .active_addresse p {
         font-size: smaller;
+        padding: 15px 0px 0px 20px;
     }
     .Activité1 {
         grid-area: a;
