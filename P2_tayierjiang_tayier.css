@@ -47,9 +47,6 @@
     .ligne2 hr,
     .ligne3 hr {
         border: 2px solid;
-        /* width: 50%;display: inline-block; */
-        /* box-sizing: border-box; */
-        /* margin: -8px -4px -8px 0px; */
     }
     .ligne2,
     .ligne3 {
@@ -347,9 +344,6 @@
     .ligne2 hr,
     .ligne3 hr {
         border: 2px solid;
-        /* width: 50%;display: inline-block; */
-        /* box-sizing: border-box; */
-        /* margin: -8px -4px -8px 0px; */
     }
     .ligne2,
     .ligne3 {
@@ -971,7 +965,6 @@
         min-width: 1440px;
         font-family: Raleway, sans-serif;
         image-rendering: pixelated;
-        box-sizing: none;
         margin: auto;
     }
     .container {
