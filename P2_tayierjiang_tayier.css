@@ -962,18 +962,42 @@
 
 @media (min-width: 1024px) {
     body {
-        min-width: 1440px;
         font-family: Raleway, sans-serif;
-        image-rendering: pixelated;
-        margin: auto;
+        height: 100%;
+        margin: 0;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
     }
     .container {
-        margin: 0px 40px;
+        display: flex;
+        height: 100%;
+        max-width: 1440px;
+        flex-direction: column;
+        align-content: center;
+        padding: 50px;
     }
     /* ------------------------section-1---------------------------------------------- */
+    .ligne1 {
+        background-color: blue;
+        width: 35%;
+        height: 2px;
+        position: relative;
+        left: 29px;
+        bottom: 60px;
+    }
+    .container_head {
+        border: 2px solid;
+    }
+    .menu {
+        font-size: larger;
+        align-self: center;
+        margin-left: auto;
+    }
     div.head {
         display: flex;
         padding-bottom: 30px;
+        justify-content: space-between;
     }
     div.logo {
         display: inline-block;
@@ -1108,9 +1132,10 @@
     /* ---------------section-2------------------------------------------------ */
     .Héberge_marsrille {
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        width: 1340px;
+        justify-content: space-between;
+        /*! align-items: inherit; */
+        /*! width: 100%; */
+        padding: 0px;
     }
     .fa-chart-line {
         font-size: x-large;
@@ -1124,42 +1149,55 @@
         color: #0065fc;
     }
     /* -------------------section-3--------------------------------- */
+    .Hébergements-Marseille_image {
+        border-radius: 17px 17px 0 0;
+        overflow: hidden;
+    }
     p.Marseille {
-        margin: 25px 0px 30px 10px;
+        /*! margin: 25px 0px 30px 10px; */
         font-weight: 500;
         font-size: 22px;
+        /*! margin-bottom: 45px; */
+        padding: 40px 0px;
     }
     h2.Marseille {
-        margin-left: 10px;
-        margin-top: 47px;
-        margin-bottom: -31px;
-        font-size: x-large;
-        color: black;
-        font-weight: bold;
+        /*! margin-left: 10px; */
+        /*! margin-top: 47px; */
         grid-column: 1/4;
+        justify-self: start;
+        /*! margin-block-end: 0px; */
+        margin: 0;
     }
     div.Marseille {
         background-color: #f2f2f2;
         border-radius: 20px;
-        padding: 0px 30Px;
-        width: 882px;
-        display: inline-grid;
-        grid-template-columns: auto auto auto;
-        margin-right: 40px;
+        padding: 45px 40px;
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3%;
+        /*! padding: 44px; */
+        /*! height: 665px; */
+        margin-bottom: 0px;
     }
     .Hébergements-Marseille {
-        margin: 15px 15px;
-    }
-    .Marseille div {
+        /*! margin: 15px 15px; */
         background-color: white;
         border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .Marseille div {
+        /*! background-color: white; */
+        /*! border-radius: 20px; */
     }
     .Marseille img {
-        width: 245px;
-        height: 113px;
-        border-radius: 17px 17px 0 0;
-        padding: 5px 5px 5px 5px;
-        justify-self: center;
+        /*! width: 245px; */
+        height: 135px;
+        /*! border-radius: 17px 17px 0 0; */
+        /*! padding: 5px 5px 5px 5px; */
+        width: 100%;
     }
     .info p {
         font-weight: lighter;
@@ -1167,18 +1205,19 @@
     .prix h4,
     p {
         margin: -2px 0px 7px 0px;
+        /*! line-height: 15px; */
     }
     .Hébergements-Marseille .prix {
-        margin-left: 20px;
-        height: 40px;
+        margin-left: 15px;
+        height: 75px;
+        margin-top: 10px;
     }
     div.plus_populaires {
         background-color: #f2f2f2;
         border-radius: 20px;
-        padding: 17px 20px 0px 20px;
-        width: 380px;
-        display: inline-grid;
-        grid-template-rows: 10% 29% 29% 29%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
     }
     .Hébergement_populaire div.prix {
         padding: 15px 20px 0px 0px;
@@ -1211,13 +1250,16 @@
         font-size: small;
         color: #0065fc;
     }
+    .fa-star_5 {
+        color: #d4d1d1;
+    }
     /* ----------------  Sections-4 ------------------------------------ */
     div.Activité {
         border-radius: 20px;
         display: grid;
         grid-template-areas: "a b d e" "a b d e ";
         grid-template-columns: 23% 23% 23% 22%;
-        grid-gap: 40Px;
+        grid-gap: 40px;
         width: 1375px;
         height: 450px;
     }
