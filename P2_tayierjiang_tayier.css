@@ -965,9 +965,11 @@
         font-family: Raleway, sans-serif;
         height: 100%;
         margin: 0;
-        align-content: center;
+        /*! align-content: center; */
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        max-width: 1440px;
     }
     .container {
         display: flex;
@@ -1172,13 +1174,14 @@
         background-color: #f2f2f2;
         border-radius: 20px;
         padding: 45px 40px;
-        width: 60%;
+        width: 57%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 3%;
         /*! padding: 44px; */
         /*! height: 665px; */
         margin-bottom: 0px;
+        margin-left: -10px;
     }
     .Hébergements-Marseille {
         /*! margin: 15px 15px; */
@@ -1212,22 +1215,37 @@
         height: 75px;
         margin-top: 10px;
     }
+    .Hébergement_populaire_image {
+        border-radius: 20px 0 0px 20px;
+        padding: 5px;
+        background-color: white;
+        overflow: hidden;
+        height: 145px;
+    }
     div.plus_populaires {
         background-color: #f2f2f2;
         border-radius: 20px;
         width: 30%;
         display: flex;
         flex-direction: column;
+        padding: 20px;
     }
     .Hébergement_populaire div.prix {
-        padding: 15px 20px 0px 0px;
+        padding: 20px 20px 0px 14px;
+        /*! flex: ; */
+        /*! display: flex; */
+        /*! flex-direction: column; */
+        /*! align-items: flex-start; */
+        /*! justify-content: flex-end; */
+        /*! flex-wrap: wrap; */
     }
     .plus_populaires img {
-        width: 80%;
-        height: 92%;
+        width: 100%;
+        height: 100%;
         border-radius: 17px 0 0px 17px;
-        padding: 5px 10px 5px 5px;
-        background-color: white;
+        /*! padding: 5px 10px 5px 5px; */
+        /*! background-color: white; */
+        max-width: 100%;
     }
     div.Hébergement-populaire {
         display: flex;
@@ -1236,10 +1254,13 @@
     }
     div.Hébergement_populaire {
         display: inline-grid;
-        grid-template-columns: 154px 190px;
+        grid-template-columns: 45% 55%;
         margin: 20px;
         border-radius: 20px;
         background-color: white;
+        /*! display: flex; */
+        /*! flex-direction: row; */
+        /*! height: 145px; */
     }
     i {
         font-size: small;
@@ -1250,7 +1271,7 @@
         font-size: small;
         color: #0065fc;
     }
-    .fa-star_5 {
+    .fas.fa-star_5 {
         color: #d4d1d1;
     }
     /* ----------------  Sections-4 ------------------------------------ */
@@ -1260,7 +1281,7 @@
         grid-template-areas: "a b d e" "a b d e ";
         grid-template-columns: 23% 23% 23% 22%;
         grid-gap: 40px;
-        width: 1375px;
+        /*! width: 1375px; */
         height: 450px;
     }
     .active_addresse {
@@ -1268,6 +1289,8 @@
     }
     .Activité-à-Marseille {
         margin: 60px 0px;
+        display: flex;
+        flex-direction: column;
     }
     .Activité div {
         border-radius: 20px;
@@ -1339,11 +1362,15 @@
         background-color: #f2f2f2;
         margin: 49px 0px 0px 0px;
         padding: 30px;
-        font-size: larger;
+        font-size: large;
+        /*! width: 1380px; */
+        max-width: 1380px;
     }
     .footer1 {
         display: grid;
         grid-template-columns: auto auto auto;
+        /*! justify-items: left; */
+        margin-left: 45px;
     }
 }
 
