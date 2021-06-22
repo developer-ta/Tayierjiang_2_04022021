@@ -641,8 +641,8 @@
     
     @media (min-width: 768px) and (max-width: 1023px) {
         body {
-            /*! font-family: Raleway, sans-serif; */
-            /*! image-rendering: pixelated; */
+            font-family: Raleway, sans-serif;
+            image-rendering: pixelated;
             height: 100%;
             margin: 0;
             align-content: center;
@@ -1433,81 +1433,72 @@
             grid-template-columns: 1fr 1fr 1fr;
         }
         /* ----------------  Sections-4 ------------------------------------ */
-        div.Activité {
+  div.Activité {
             border-radius: 20px;
             display: grid;
-            grid-template-areas: "a b d e" "a b d e ";
-            grid-template-columns: 23% 23% 23% 22%;
-            grid-gap: 40px;
-            /*! width: 1375px; */
-            height: 450px;
-        }
-        .active_addresse {
-            height: 50px;
-        }
-        .Activité-à-Marseille {
-            margin: 60px 0px;
-            display: flex;
-            flex-direction: column;
+            grid-template-areas: "f f" "a b " "a c" "d e" "d j";
+            grid-template-columns: 50% 50%;
         }
         .Activité div {
             border-radius: 20px;
+            margin: 15px;
+            font-weight: 500;
+            font-size: larger;
         }
-        .active_addresse p {
-            font-size: smaller;
-            padding: 15px 0px 0px 20px;
+        .Activité img {
+            border-radius: 17px 17px 0 0;
         }
-        .Activité1 {
-            grid-area: a;
-            box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
+        .Activité1 img {
+            height: 455px;
+            width: 100%;
         }
-        .Activité1 img,
-        .Activité4 img {
-            height: 400px;
+        .Activité1 img {
+            height: 455px;
             width: 100%;
         }
         .Activité2 img {
-            height: 170px;
+            height: 185px;
             width: 100%;
         }
         .Activité3 img {
-            height: 122px;
+            height: 161px;
+            width: 100%;
+        }
+        .Activité4 img {
+            height: 455px;
             width: 100%;
         }
         .Activité5 img {
-            height: 140px;
+            height: 189px;
             width: 100%;
         }
         .Activité6 img {
-            height: 165px;
+            height: 155px;
             width: 100%;
         }
-        .contaier-Activité_1 {
-            grid-area: b;
+        .Activité1 {
+            box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
+            overflow: hidden;
         }
         .Activité2 {
             box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
             overflow: hidden;
-            height: 240px;
-            margin-bottom: 40px;
+        }
+        .Activité2 {
+            box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
+            overflow: hidden;
         }
         .Activité3 {
             box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
             overflow: hidden;
-            height: 198px;
         }
         .Activité4 {
-            grid-area: d;
             box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
             overflow: hidden;
-        }
-        .contaier-Activité_2 {
-            grid-area: e;
         }
         .Activité5 {
             box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
             overflow: hidden;
-            margin-bottom: 40px;
         }
         .Activité6 {
             box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
@@ -1515,6 +1506,13 @@
         }
         .Activité img {
             border-radius: 17px 17px 0 0;
+        }
+        .Activité h2 {
+            margin-left: 25px;
+            font-size: x-large;
+            color: black;
+            font-weight: 600;
+            grid-area: f;
         }
         .footer {
             background-color: #f2f2f2;
@@ -1540,7 +1538,7 @@
             font-family: Raleway, sans-serif;
             height: 100%;
             margin: 0;
-            /*! align-content: center; */
+            align-content: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
