@@ -15,11 +15,11 @@
     .container {
         display: flex;
         flex-direction: column;
-        padding: 40px 0px 0px 0px;
+        padding: 27px 0px 0px 0px;
         justify-content: center;
-        align-items: center;
         image-rendering: -webkit-optimize-contrast;
         image-rendering: pixelated;
+        width: 100%;
     }
     /* --------------------------------section-1---------------------------------------- */
     div.logo {
@@ -33,8 +33,10 @@
         background-color: blue;
     }
     .container_head {
-        padding: 20px 10px;
-        width: 94%;
+        /* padding: 20px 10px; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .ligne3 {
         background-color: whitesmoke;
@@ -149,7 +151,7 @@
     }
     div.info {
         display: flex;
-        margin: 30px 15px 6px 5px;
+        margin: 30px 15px 6px 5%;
         flex-direction: row;
         align-items: center;
     }
@@ -157,7 +159,7 @@
         text-align: center;
         color: #0065fc;
         border-radius: 50%;
-        padding: 4px 9px;
+        padding: 4.5px 10px;
         margin-right: 13px;
         box-shadow: 0px 0px 1px 2.1px gainsboro;
     }
@@ -235,10 +237,16 @@
     }
     /* ------------------------------section-3---------------------------------------- */
     h2.Marseille {
-        margin-left: 20px;
+        margin-left: 7%;
         font-size: x-large;
         color: black;
         font-weight: bold;
+    }
+    .Hébergements-Marseille .prix {
+        margin-left: 6%;
+        /* line-height: 0.2; */
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
     .Hébergements-Marseille_image {
         border-radius: 20px 20px 0 0;
@@ -282,6 +290,12 @@
         /* padding: 0px; */
         flex-direction: column-reverse;
         /* margin: 10px 0px; */
+    }
+    .Activité-à-Marseille>h2 {
+        margin-left: 5%;
+    }
+    .info>p {
+        font-weight: 300;
     }
     /* --------------------------------------section-4----------------------------------*/
     div.Activité {
@@ -342,18 +356,23 @@
     .footer {
         background-color: #f2f2f2;
         margin: 49px 0px 0px 0px;
-        padding: 30px;
+        padding-top: 30px;
+        width: 100%;
     }
     .footer div {
         margin-bottom: 45px;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        margin-left: 5%;
     }
 }
 
 
 /* Mobile L
-@media (min-width: 425px) and (max-width: 767px) */
+@media (min-width: 426px) and (max-width: 767px) */
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 426px) and (max-width: 767px) {
     body {
         font-family: Raleway, sans-serif;
         height: 100%;
@@ -703,11 +722,15 @@
     .footer {
         background-color: #f2f2f2;
         margin: 49px 0px 0px 0px;
-        padding: 30px;
-        font-size: larger;
+        padding-top: 30px;
+        width: 100%;
     }
     .footer div {
         margin-bottom: 45px;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        margin-left: 5%;
     }
 }
 
@@ -1334,7 +1357,7 @@
         text-align: center;
         color: #0065fc;
         border-radius: 50%;
-        padding: 4px 9px;
+        padding: 4.5px 9px;
         margin-right: 13px;
         box-shadow: 0px 0px 1px 2.1px gainsboro;
     }
