@@ -3,20 +3,41 @@
 @media (max-width: 375px),
 (min-width: 375px) and (max-width: 425px) {
     body {
-        width: 100%;
         font-family: Raleway, sans-serif;
-        -ms-interpolation-mode: nearest-neighbor;
-        image-rendering: -moz-crisp-edges;
-        image-rendering: pixelated;
-        margin: auto;
+        height: 100%;
+        margin: 0;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    /* -----------------------------------section-1----------------------------------- */
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0px 0px 0px;
+        justify-content: center;
+        align-items: center;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+    }
+    /* --------------------------------section-1---------------------------------------- */
     div.logo {
         display: inline-block;
         margin-left: 15px;
     }
     .ligne1 {
         display: none;
+    }
+    .ligne2 {
+        background-color: blue;
+    }
+    .container_head {
+        padding: 20px 10px;
+        width: 94%;
+    }
+    .ligne3 {
+        background-color: whitesmoke;
     }
     .menu a {
         text-decoration: none;
@@ -43,9 +64,6 @@
         font-size: larger;
         font-weight: 600;
     }
-    .container {
-        margin-top: 29px;
-    }
     .ligne2 hr,
     .ligne3 hr {
         border: 2px solid;
@@ -55,18 +73,18 @@
         display: inline-block;
         width: 50%;
         margin-right: -3px;
+        height: 2px;
     }
     .vacances {
         padding: 10px 20px;
     }
     .form {
         box-shadow: 0px 0px 4px 0.2px gainsboro;
-        max-width: 346px;
+        max-width: 349px;
         border-radius: 20px;
         margin: 20px 20px;
         overflow: hidden;
         display: flex;
-        flex-direction: row;
     }
     .form>span {
         padding: 15px 10px;
@@ -108,7 +126,7 @@
         background-color: white;
         border-radius: 40px 40px;
         margin: 5px 5px 18px 4px;
-        padding: 14px 13px 15px 8px;
+        padding: 14px 13px 15px 11px;
         box-sizing: border-box;
         overflow: hidden;
         box-shadow: 0px 0px 1px 1.4px gainsboro;
@@ -131,27 +149,45 @@
     }
     div.info {
         display: flex;
-        margin: 1px 1px 15px 5px;
+        margin: 30px 15px 6px 5px;
+        flex-direction: row;
+        align-items: center;
     }
     .info i {
         text-align: center;
         color: #0065fc;
         border-radius: 50%;
-        padding: 5px 11px;
-        margin: 13px;
-        box-sizing: border-box;
-        box-shadow: 0px 0px 1px 1.1px gainsboro;
+        padding: 4px 9px;
+        margin-right: 13px;
+        box-shadow: 0px 0px 1px 2.1px gainsboro;
     }
     /* -----------------------------section-2--------------------------------------- */
     div.plus_populaires {
         background-color: #f2f2f2;
         padding: 17px 0px;
-        display: grid;
+        display: flex;
+        flex-direction: column;
+    }
+    .Hébergement_populaire_image {
+        border-radius: 20px 0 0px 20px;
+        padding: 5px;
+        background-color: white;
+        overflow: hidden;
+        height: 143px;
+    }
+    .Hébergement_populaire-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* width: 100%; */
+        margin: 0px;
     }
     div.Hébergement-populaire {
         display: flex;
-        justify-content: space-between;
-        padding: 0px 20px 0px 20px;
+        justify-content: space-around;
+        /* padding: 0px 20px 0px 20px; */
+        align-items: center;
     }
     .fa-chart-line {
         font-size: x-large;
@@ -159,24 +195,27 @@
     div.Hébergement_populaire {
         display: inline-grid;
         grid-template-columns: 41% 59%;
-        margin: 6px 19px;
+        margin: 10px 7%;
         border-radius: 20px;
         overflow: hidden;
         background-color: white;
     }
     .plus_populaires img {
         width: 100%;
-        height: 145px;
+        height: 100%;
         border-radius: 20px 0 0 20px;
-        padding: 5px;
+        /* padding: 5px; */
         background-color: white;
     }
     .Hébergement_populaire div.prix {
-        background-color: white;
-        padding: 20px 20px 0 20px;
-    }
-    .prix {
-        padding: 7px 15px;
+        padding: 0px 10% -1px 10%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 12% 0px 10%;
+        /* padding-bottom: 5px; */
+        /* line-height: 15px; */
+        font-weight: 300;
+        justify-content: center;
     }
     .prix h4 {
         margin: -2px 0px 7px 0px;
@@ -196,39 +235,53 @@
     }
     /* ------------------------------section-3---------------------------------------- */
     h2.Marseille {
-        margin-left: 25px;
+        margin-left: 20px;
         font-size: x-large;
         color: black;
         font-weight: bold;
     }
+    .Hébergements-Marseille_image {
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+        /* margin: 5px; */
+        padding: 5px 5px 0px 5px;
+        /* margin-bottom: 41px; */
+    }
     .Marseille {
-        display: grid;
+        display: flex;
+        flex-direction: column;
     }
     .Marseille i {
         font-size: small;
         color: #0065fc;
     }
-    .Marseille div {
-        background-color: white;
-        border-radius: 20px;
-        display: inline-grid;
-        margin: 15px;
-        margin-top: 3px;
-    }
     .Hébergements-Marseille {
         border-radius: 20px;
-        box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
-        margin: 6px 19px;
+        box-shadow: 0px 2px 20px 2.1px lightgrey;
+        margin: 6px 7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 15px;
     }
     .Marseille img {
-        width: 97%;
+        width: 100%;
         height: 133px;
         border-radius: 20px 20px 0px 0px;
-        padding: 5px 5px 5px 6px;
+        /* padding: 5px; */
     }
     p.Marseille {
         margin-left: 20px;
         font-weight: 600;
+    }
+    .Héberge_marsrille {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 82%; */
+        /* padding: 0px; */
+        flex-direction: column-reverse;
+        /* margin: 10px 0px; */
     }
     /* --------------------------------------section-4----------------------------------*/
     div.Activité {
@@ -1810,7 +1863,7 @@
         padding: 5px;
         background-color: white;
         overflow: hidden;
-        height: 145px;
+        height: 143px;
     }
     div.plus_populaires {
         background-color: #f2f2f2;
@@ -1827,6 +1880,10 @@
         /*! flex: ; */
         display: flex;
         flex-direction: column;
+        margin: 0px 5% 0px 10%;
+        padding-bottom: 5px;
+        line-height: 15px;
+        font-weight: 300;
     }
     .plus_populaires img {
         width: 100%;
@@ -1871,7 +1928,7 @@
         display: grid;
         grid-template-areas: "a b d e" "a b d e ";
         grid-template-columns: 24% 22% 24% 22%;
-        grid-gap: 2%;
+        grid-gap: 2.67%;
         height: 450px;
     }
     .active_addresse {
