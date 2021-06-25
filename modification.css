@@ -1,7 +1,17 @@
+body {
+    font-family: Raleway, sans-serif;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container_main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 1440px;
 }
 
 label a {
@@ -73,12 +83,9 @@ a {
     .container {
         display: flex;
         flex-direction: column;
-        padding: 27px 0px 0px 0px;
+        /* margin: 25px 4% 0px 4%; */
         justify-content: center;
-        -ms-interpolation-mode: nearest-neighbor;
         image-rendering: -moz-crisp-edges;
-        image-rendering: pixelated;
-        width: 100%;
     }
     /* --------------------------------section-1---------------------------------------- */
     div.logo {
@@ -366,7 +373,6 @@ a {
         border-radius: 20px;
         overflow: hidden;
         font-weight: 500;
-        font-size: larger;
     }
     .Activité1 {
         box-shadow: 0px 0px 30px 10.1px rgb(230 231 230);
@@ -428,25 +434,11 @@ a {
 @media (min-width: 426px) and (max-width: 767px) */
 
 @media (min-width: 426px) and (max-width: 767px) {
-    body {
-        font-family: Raleway, sans-serif;
-        height: 100%;
-        margin: 0;
-        align-content: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 1440px;
-        align-items: center;
-    }
     .container {
         display: flex;
-        max-width: 1440px;
         flex-direction: column;
-        padding: 29px 0% 0px 0px;
+        /* margin: 50px 4% 0px 4%; */
         justify-content: center;
-        align-items: baseline;
-        -ms-interpolation-mode: nearest-neighbor;
         image-rendering: -moz-crisp-edges;
         image-rendering: pixelated;
     }
@@ -457,10 +449,8 @@ a {
     }
     .ligne2,
     .ligne3 {
-        display: inline-block;
         width: 50%;
-        margin-right: -3px;
-        height: 2px;
+        height: 3px;
     }
     .ligne1 {
         display: none;
@@ -501,11 +491,7 @@ a {
         border: 2px solid;
     }
     .ligne2,
-    .ligne3 {
-        display: inline-block;
-        width: 50%;
-        margin-right: -3px;
-    }
+    .ligne3 {}
     .vacances {
         padding: 10px 20px;
     }
@@ -810,20 +796,11 @@ a {
 /* Tablette/@media (min-width: 768px) and (max-width: 1023px)§§§§§§§§§§§§§§§§§§§§§§§§§§§§----- */
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    body {
-        font-family: Raleway, sans-serif;
-        height: 100%;
-        margin: 0;
-        max-width: 1440px;
-    }
     .container {
         display: flex;
-        max-width: 1440px;
         flex-direction: column;
-        padding: 40px 4% 0px 4%;
+        margin: 50px 4% 50px 4%;
         justify-content: center;
-        align-items: flex-start;
-        -ms-interpolation-mode: nearest-neighbor;
         image-rendering: -moz-crisp-edges;
         image-rendering: pixelated;
     }
@@ -845,10 +822,11 @@ a {
         align-self: center;
         margin-left: auto;
     }
-    div.head {
+    .head {
         display: flex;
-        padding-bottom: 30px;
-        justify-content: space-between;
+        justify-content: center;
+        margin: 50px 4% 0px 4%;
+        align-items: center;
     }
     div.logo {
         display: inline-block;
@@ -858,15 +836,6 @@ a {
     }
     .vacances {
         margin-top: 3em;
-    }
-    hr.head {
-        border: 0.1px solid;
-        display: block;
-        width: 11em;
-        box-sizing: border-box;
-        position: absolute;
-        left: 57em;
-        top: -7px;
     }
     .menu a {
         text-decoration: none;
@@ -1261,27 +1230,14 @@ a {
 @media (min-width: 1024px) and (max-width: 1440px)§§§§§§§§§§ */
 
 @media (min-width: 1024px) and (max-width: 1254px) {
-    body {
-        font-family: Raleway, sans-serif;
-        height: 100%;
-        margin: 0;
-        /* align-content: center; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        max-width: 1440px;
-        /* align-items: center; */
-    }
     .container {
         display: flex;
-        max-width: 1440px;
         flex-direction: column;
-        padding: 40px 4% 0px 4%;
+        margin: 50px 4% 0px 4%;
         justify-content: center;
-        align-items: flex-start;
-        -ms-interpolation-mode: nearest-neighbor;
         image-rendering: -moz-crisp-edges;
         image-rendering: pixelated;
+        /* width: 1380px; */
     }
     /* ------------------------section-1---------------------------------------------- */
     .ligne1 {
@@ -1301,10 +1257,11 @@ a {
         align-self: center;
         margin-left: auto;
     }
-    div.head {
+    .head {
         display: flex;
-        padding-bottom: 30px;
-        justify-content: space-between;
+        justify-content: center;
+        margin: 50px 4% 0px 4%;
+        align-items: center;
     }
     div.logo {
         display: inline-block;
@@ -1314,15 +1271,6 @@ a {
     }
     .vacances {
         margin-top: 3em;
-    }
-    hr.head {
-        border: 0.1px solid;
-        display: block;
-        width: 11em;
-        box-sizing: border-box;
-        position: absolute;
-        left: 57em;
-        top: -7px;
     }
     .menu a {
         text-decoration: none;
@@ -1715,24 +1663,11 @@ a {
 /*---------------- Responsive général ------------------------*/
 
 @media (min-width: 1255px) {
-    body {
-        font-family: Raleway, sans-serif;
-        height: 100%;
-        margin: 0;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        max-width: 1440px;
-        /* align-items: center; */
-    }
     .container {
         display: flex;
-        height: 1880px;
-        max-width: 1440px;
         flex-direction: column;
-        padding: 50px 4% 0px 4%;
+        margin: 0px 4% 30px 4%;
         justify-content: center;
-        -ms-interpolation-mode: nearest-neighbor;
         image-rendering: -moz-crisp-edges;
         image-rendering: pixelated;
     }
@@ -1754,10 +1689,11 @@ a {
         align-self: center;
         margin-left: auto;
     }
-    div.head {
+    .head {
         display: flex;
-        padding-bottom: 30px;
-        justify-content: space-between;
+        justify-content: center;
+        margin: 50px 4% 0px 4%;
+        align-items: center;
     }
     div.logo {
         display: inline-block;
@@ -1767,15 +1703,6 @@ a {
     }
     .vacances {
         margin-top: 3em;
-    }
-    hr.head {
-        border: 0.1px solid;
-        display: block;
-        width: 11em;
-        box-sizing: border-box;
-        position: absolute;
-        left: 57em;
-        top: -7px;
     }
     .menu a {
         text-decoration: none;
