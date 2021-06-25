@@ -449,10 +449,8 @@ a {
     }
     .ligne2,
     .ligne3 {
-        display: inline-block;
         width: 50%;
-        margin-right: -3px;
-        height: 2px;
+        height: 3px;
     }
     .ligne1 {
         display: none;
@@ -493,11 +491,7 @@ a {
         border: 2px solid;
     }
     .ligne2,
-    .ligne3 {
-        display: inline-block;
-        width: 50%;
-        margin-right: -3px;
-    }
+    .ligne3 {}
     .vacances {
         padding: 10px 20px;
     }
@@ -704,7 +698,7 @@ a {
     }
     .Activité div {
         border-radius: 20px;
-        margin: 20px 10px;
+        margin: 20px 2px;
         font-weight: 500;
         font-size: larger;
     }
@@ -728,8 +722,8 @@ a {
         width: 100%;
     }
     .Activité4 img {
-        height: 455px;
-        width: 428px;
+        /* height: 455px; */
+        /* width: 428px; */
     }
     .Activité5 img {
         height: 189px;
@@ -805,7 +799,7 @@ a {
     .container {
         display: flex;
         flex-direction: column;
-        margin: 50px 4% 50px 4%;
+        /* margin: 50px 4% 50px 4%; */
         justify-content: center;
         image-rendering: -moz-crisp-edges;
         image-rendering: pixelated;
@@ -1139,6 +1133,7 @@ a {
     .Activité-à-Marseille {
         display: flex;
         flex-direction: column;
+        margin: 0px 1%;
     }
     .Activité1 img {
         height: 80%;
