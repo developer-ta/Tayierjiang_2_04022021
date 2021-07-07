@@ -14,6 +14,10 @@ body {
     max-width: 1440px;
 }
 
+* {
+    object-fit: cover;
+}
+
 label a {
     text-decoration: none;
     color: black;
@@ -131,16 +135,15 @@ a {
         font-size: larger;
         font-weight: 600;
     }
-    .ligne2 hr,
-    .ligne3 hr {
-        border: 2px solid;
+    .linge-horizontal {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
     }
     .ligne2,
     .ligne3 {
-        display: inline-block;
         width: 50%;
-        margin-right: -3px;
-        height: 2px;
+        height: 3px;
     }
     .vacances {
         padding: 10px 20px;
@@ -245,7 +248,7 @@ a {
     .Hébergement_populaire-flex {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         justify-content: center;
         /* width: 100%; */
         margin: 0px;
@@ -346,7 +349,7 @@ a {
     .Héberge_marsrille {
         display: flex;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
         /* width: 82%; */
         /* padding: 0px; */
         flex-direction: column-reverse;
@@ -445,6 +448,11 @@ a {
     div.logo {
         display: inline-block;
         margin-left: 15px;
+    }
+    .linge-horizontal {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
     }
     .ligne2,
     .ligne3 {
@@ -599,10 +607,11 @@ a {
         border-radius: 20px;
         overflow: hidden;
         background-color: white;
+        height: 205px;
     }
     .plus_populaires img {
         width: 100%;
-        height: 145px;
+        height: 185px;
         border-radius: 20px 0 0 20px;
         padding: 5px;
         background-color: white;
@@ -653,7 +662,7 @@ a {
     }
     .Marseille img {
         width: 100%;
-        height: 113px;
+        height: 190px;
         /*! border-radius: 20px 20px 0 0; */
         /*! padding: 10px; */
     }
@@ -667,10 +676,9 @@ a {
     div.Marseille {
         background-color: #f2f2f2;
         border-radius: 20px;
-        /* padding: 40px 40px 0px 40px; */
         width: 100%;
         display: grid;
-        /* margin: 21px; */
+        grid-template-columns: 1fr 1fr;
     }
     h2.Marseille {
         margin-left: 25px;
@@ -687,17 +695,22 @@ a {
         padding: 5px;
         background-color: white;
         overflow: hidden;
-        height: 160px;
+        height: 100%;
     }
     /* ----------------------------section-4-----------------------------------*/
     div.Activité {
         border-radius: 20px;
-        display: grid;
+        display: flex;
+        flex-direction: column;
+    }
+    .Activité-à-Marseille {
+        display: flex;
         /* grid-row-gap: 1%; */
+        flex-direction: column;
+        margin: 2%;
     }
     .Activité div {
         border-radius: 20px;
-        margin: 20px 2px;
         font-weight: 500;
         font-size: larger;
     }
@@ -735,30 +748,32 @@ a {
     .Activité1 {
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
+        margin-top: 30px;
     }
     .Activité2 {
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
-    }
-    .Activité2 {
-        box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
-        overflow: hidden;
+        margin-top: 30px;
     }
     .Activité3 {
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
+        margin-top: 30px;
     }
     .Activité4 {
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
+        margin-top: 30px;
     }
     .Activité5 {
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
+        margin-top: 30px;
     }
     .Activité6 {
         box-shadow: 0px 0px 32px 14.1px rgb(240 240 240);
         overflow: hidden;
+        margin-top: 30px;
     }
     .Activité img {
         border-radius: 17px 17px 0 0;
@@ -804,12 +819,12 @@ a {
     }
     /* ------------------------section-1---------------------------------------------- */
     .ligne1 {
-        background-color: blue;
-        width: 35%;
+        background-color: #0164fc;
+        width: 156px;
         height: 2px;
-        position: relative;
-        left: 29px;
-        bottom: 60px;
+        position: absolute;
+        right: 24%;
+        top: 0px;
     }
     .container_head {
         height: 425px;
@@ -1035,18 +1050,11 @@ a {
         align-content: center;
     }
     div.Marseille {
-        /*! background-color: #f2f2f2; */
-        /*! border-radius: 20px; */
-        /*! padding: 20px; */
-        /*! width: 96%; */
-        /*! margin: 15px; */
-        /*! display: grid; */
         background-color: #f2f2f2;
         border-radius: 20px;
-        /* padding: 40px 4%; */
-        width: 99%;
+        width: 100%;
         display: grid;
-        /* margin: 21px; */
+        grid-template-columns: 1fr 1fr;
     }
     h2.Marseille {
         margin-left: 20px;
@@ -1074,7 +1082,7 @@ a {
     }
     .Marseille img {
         width: 100%;
-        height: 150px;
+        height: 200px;
         /*! border-radius: 20px 20px 0 0; */
         /*! padding: 10px; */
     }
@@ -1231,12 +1239,12 @@ a {
     }
     /* ------------------------section-1---------------------------------------------- */
     .ligne1 {
-        background-color: blue;
-        width: 35%;
+        background-color: #0164fc;
+        width: 156px;
         height: 2px;
-        position: relative;
-        left: 29px;
-        bottom: 60px;
+        position: absolute;
+        right: 24%;
+        top: 0px;
     }
     .container_head {
         height: 425px;
@@ -1661,12 +1669,12 @@ a {
     }
     /* ------------------------section-1---------------------------------------------- */
     .ligne1 {
-        background-color: blue;
-        width: 35%;
+        background-color: #0164fc;
+        width: 156px;
         height: 2px;
-        position: relative;
-        left: 29px;
-        bottom: 60px;
+        position: absolute;
+        right: 24%;
+        top: 0px;
     }
     .container_head {
         height: 425px;
