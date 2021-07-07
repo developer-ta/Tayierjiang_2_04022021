@@ -7,11 +7,22 @@ body {
     align-items: center;
 }
 
+a.logo {
+    margin-left: 20px;
+    margin-top: 22px;
+}
+
 .container_main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 1440px;
+    width: 100%;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
 }
 
 * {
@@ -155,13 +166,15 @@ a {
         margin: 20px 20px;
         overflow: hidden;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .form>span {
-        padding: 15px 10px;
+        padding: 15px 4px;
         background-color: #f2f2f2;
     }
     .form i {
-        font-size: x-large;
+        font-size: large;
         padding: 0px 18px;
     }
     input {
@@ -179,6 +192,8 @@ a {
         border: none;
         border-radius: 20px 0px 0px 22px;
         overflow: hidden;
+        position: relative;
+        left: 5px;
     }
     span.Recherche {
         display: none;
@@ -201,10 +216,10 @@ a {
         overflow: hidden;
         box-shadow: 0px 0px 1px 1.4px gainsboro;
         border: none;
-        cursor: default;
+        cursor: pointer;
         font-weight: 900;
         font-family: sans-serif;
-        font-size: inherit;
+        font-size: medium;
     }
     .filtres span {
         padding: 20px 20px;
@@ -213,9 +228,10 @@ a {
         position: relative;
         right: 11px;
     }
+    .filtres span {}
     .filtres i {
         color: #0065fc;
-        font-size: larger;
+        /* font-size: larger; */
     }
     div.info {
         display: flex;
@@ -265,16 +281,16 @@ a {
     div.Hébergement_populaire {
         display: grid;
         grid-template-columns: 41% 59%;
-        margin: 10px 7%;
+        margin: 10px 5%;
         border-radius: 20px;
         overflow: hidden;
         background-color: white;
+        height: 143px;
     }
     .plus_populaires img {
         width: 100%;
-        height: 100%;
+        height: 93%;
         border-radius: 20px 0 0 20px;
-        /* padding: 5px; */
         background-color: white;
     }
     .Hébergement_populaire div.prix {
@@ -288,6 +304,7 @@ a {
     }
     .prix p {
         margin: -2px 0px 7px 0px;
+        font-weight: lighter;
     }
     .Hébergement_populaire i {
         margin-top: 30px;
@@ -827,19 +844,24 @@ a {
         top: 0px;
     }
     .container_head {
-        height: 425px;
+        height: 340px;
         margin-bottom: 140px;
+        width: 97%;
+        padding: 10px;
     }
     .menu {
         font-size: larger;
         align-self: center;
         margin-left: auto;
     }
+    a.logo {
+        margin-left: -27px;
+        margin-top: -4px;
+    }
     .head {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
         margin: 50px 4% 0px 4%;
-        align-items: center;
     }
     div.logo {
         display: inline-block;
@@ -946,6 +968,9 @@ a {
     }
     form.filtres {
         margin: 30px 0px 0px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     div.info {
         display: flex;
@@ -1257,9 +1282,14 @@ a {
     }
     .head {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         margin: 50px 4% 0px 4%;
         align-items: center;
+    }
+    a.logo {
+        margin-left: 20px;
+        margin-top: 0px;
     }
     div.logo {
         display: inline-block;
@@ -1685,11 +1715,16 @@ a {
         align-self: center;
         margin-left: auto;
     }
+    a.logo {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
     .head {
         display: flex;
         justify-content: center;
         margin: 50px 4% 0px 4%;
         align-items: center;
+        flex-direction: row;
     }
     div.logo {
         display: inline-block;
