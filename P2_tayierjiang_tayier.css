@@ -340,6 +340,9 @@ a {
         display: flex;
         flex-direction: column;
     }
+    .fas.fa-star_5 {
+        color: #d4d1d1;
+    }
     .Marseille i {
         font-size: small;
         color: #0065fc;
@@ -685,6 +688,9 @@ a {
     }
     .info p {
         font-weight: lighter;
+    }
+    .fas.fa-star_5 {
+        color: #d4d1d1;
     }
     .Marseille i {
         font-size: small;
